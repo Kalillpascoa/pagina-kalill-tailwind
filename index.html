@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="light scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal Kalill Páscoa - Tailwind</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+
+<!-- NAVBAR -->
+<nav class="bg-white dark:bg-gray-800 border-b sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center py-3">
+
+        <a href="#top" class="font-semibold">
+            <i class="fa-solid fa-code mr-2"></i>Portfólio Kalill Páscoa
+        </a>
+
+        <div class="hidden lg:flex gap-4">
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#interesses">Interesses</a>
+            <a href="#contato">Contato</a>
+        </div>
+
+        <button id="themeToggle" class="border px-3 py-1 rounded">
+            🌙
+        </button>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<header id="top" class="py-10">
+<div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-6 items-center">
+
+    <div class="text-center">
+        <img src="assets/img/foto.jpg" class="w-52 h-52 mx-auto rounded-full shadow">
+
+        <div class="mt-3 flex flex-wrap justify-center gap-2">
+            <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm">Sistemas de Informação</span>
+            <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm">Engenharia Florestal</span>
+            <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm">Engenharia de Segurança do Trabalho</span>
+            <span class="bg-gray-500 text-white px-2 py-1 rounded text-sm">UFLA</span>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="text-2xl font-semibold mb-3">
+            Olá! Eu sou <span class="text-blue-500">Kalill José Viana da Páscoa</span>
+        </h1>
+
+        <p class="mb-4 text-gray-600 dark:text-gray-300">
+            Engenheiro Florestal (UFLA), mestre e doutor em Ciências Florestais (UFLA), Engenheiro de Segurança do Trabalho (UFSJ) e estudante do curso de Sistemas de Informação (UFLA). Técnico administrativo - Engenheiro Florestal do LEMAF/DCF/UFLA (desde 2013). Interessado em Análise de dados, Amostragem e inventário, Biometria e Manejo florestal, Métodos de aprendizado de máquinas e Sistemas de informações aplicados ao agronegócio e a Engenharia Florestal.
+        </p>
+
+        <div class="flex flex-wrap gap-2">
+            <a href="#projetos" class="bg-blue-500 text-white px-4 py-2 rounded">
+                <i class="fa-solid fa-diagram-project mr-1"></i>Projetos
+            </a>
+            <a href="#contato" class="border px-4 py-2 rounded">
+                Contato
+            </a>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="grid md:grid-cols-2 gap-3">
+
+            <div class="p-3 border rounded bg-gray-50 dark:bg-gray-800">
+                <strong>Curso</strong>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                    Engenharia Florestal, Mestrado e Doutorado - UFLA
+                </p>
+            </div>
+
+            <div class="p-3 border rounded bg-gray-50 dark:bg-gray-800">
+                <strong>Especialização</strong>
+                <p class="text-sm">Engenharia de Segurança do Trabalho - UFSJ</p>
+            </div>
+
+            <div class="p-3 border rounded bg-gray-50 dark:bg-gray-800">
+                <strong>Graduação</strong>
+                <p class="text-sm">Sistemas de Informação - UFLA</p>
+            </div>
+
+            <div class="p-3 border rounded bg-gray-50 dark:bg-gray-800">
+                <strong>Objetivo</strong>
+                <p class="text-sm">Associar os conhecimentos da área agrária aos conhecimento de Sistemas de informação. Aprimorar habilidades em web (frontend e backend) e participar de projetos práticos no semestre.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+</header>
+
+<!-- SOBRE -->
+<section id="sobre" class="py-6 max-w-6xl mx-auto px-4">
+    <h2 class="text-xl mb-3">Sobre</h2>
+
+    <div class="grid lg:grid-cols-2 gap-4">
+
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">
+            <p>
+                Engenheiro Florestal formado pela Universidade Federal de Lavras (2011). Mestre em Engenharia Florestal pela Universidade Federal de Lavras (2012-2014). Doutor em Engenharia Florestal pela na Universidade Federal de Lavras (2014-2018). Atualmente é técnico administrativo na Universidade Federal de Lavras (2013 - atual) ocupando o cargo de Engenheiro Florestal, dando suporte as aulas dos cursos de graduação e pós-graduação e aos projetos de pesquisa e extensão. Especialização em Engenharia de Segurança do Trabalho na Universidade federal de São João del-Rei (2018 - 2020). Graduando em Sistemas de Informações pela Universidade Federal de Lavras (2021-Atual).
+            </p>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">
+            <ul>
+                <li><strong>Cidade:</strong> São Tiago/MG</li>
+                <li><strong>Idiomas:</strong> Português, Inglês</li>
+                <li><strong>Área:</strong> Análise de dados</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades" class="py-6 max-w-6xl mx-auto px-4">
+    <h2 class="text-xl mb-3">Habilidades</h2>
+
+    <div class="grid lg:grid-cols-2 gap-4">
+
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">
+            <h3 class="mb-2">Tecnologias</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-blue-500 text-white px-2 py-1 rounded">R</span>
+                <span class="bg-gray-500 text-white px-2 py-1 rounded">QGIS</span>
+                <span class="bg-gray-500 text-white px-2 py-1 rounded">RNA, Randon forest, AG</span>
+            </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">
+            <h3 class="mb-2">Competências</h3>
+            <ul class="list-disc ml-5">
+                <li>Modelos de regressão</li>
+                <li>Amostragem e inventário</li>
+                <li>Biometria</li>
+                <li>Geoestatística</li>
+                <li>Aprendizado de máquinas</li>
+                <li>R</li>
+                <li>QGis</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section id="projetos" class="py-6 max-w-6xl mx-auto px-4">
+    <div class="mb-3">
+        <h2 class="text-xl font-semibold mb-1">Projetos</h2>
+        <p class="text-gray-500 dark:text-gray-400">Alguns trabalhos já desenvolvidos.</p>
+    </div>
+
+    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Projeto 1 -->
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow flex flex-col h-full">
+            
+            <div class="flex justify-between items-start gap-2 mb-2">
+                <h3 class="font-semibold text-sm">Pedra papel e tesoura</h3>
+                <div class="flex gap-1 flex-wrap">
+                    <span class="bg-gray-500 text-white text-xs px-2 py-1 rounded">HTML</span>
+                    <span class="bg-gray-500 text-white text-xs px-2 py-1 rounded">CSS</span>
+                    <span class="bg-gray-500 text-white text-xs px-2 py-1 rounded">JavaScript</span>
+                </div>
+            </div>
+
+            <p class="text-gray-500 dark:text-gray-400 text-sm mb-2">
+                Implementação do jogo utilizando conceitos de HTML, CSS e JavaScript.
+            </p>
+
+            <ul class="text-sm mb-4 list-disc ml-4">
+                <li>Estrutura, apresentação visual, comportamento e interatividade</li>
+                <li>Manipulação do DOM</li>
+                <li>Organização MVC</li>
+            </ul>
+
+            <div class="mt-auto flex gap-2">
+                <a class="border px-3 py-1 rounded text-sm flex items-center gap-1 hover:bg-gray-100 dark:hover:bg-gray-700"
+                   href="https://github.com/Kalillpascoa/pedra-papel-tesoura" target="_blank">
+                    <i class="fa-brands fa-github"></i> Repositório
+                </a>
+
+                <a class="bg-blue-500 text-white px-3 py-1 rounded text-sm flex items-center gap-1 hover:bg-blue-600"
+                   href="https://ufla-prog-web.github.io/jogos-web/page/jogos/pedra-papel-tesoura/index.html" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                </a>
+            </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow flex flex-col h-full">
+            
+            <div class="flex justify-between items-start gap-2 mb-2">
+                <h3 class="font-semibold text-sm">Página Pessoal</h3>k
+                <div class="flex gap-1 flex-wrap">
+                    <span class="bg-gray-500 text-white text-xs px-2 py-1 rounded">HTML</span>
+                    <span class="bg-gray-500 text-white text-xs px-2 py-1 rounded">Tailwind CSS</span>
+                    <span class="bg-gray-500 text-white text-xs px-2 py-1 rounded">FontAwesome</span>
+                </div>
+            </div>
+
+            <p class="text-gray-500 dark:text-gray-400 text-sm mb-2">
+                Implementação de página pessoal com seções e navegação utilizando Tailwind CSS.
+            </p>
+
+            <ul class="text-sm mb-4 list-disc ml-4">
+                <li>Classes utilitárias do Tailwind</li>
+                <li>Grid e Flexbox do Tailwind</li>
+                <li>Estilização responsiva e customizada (cards, navbar)</li>                
+            </ul>
+
+            <div class="mt-auto flex gap-2">
+                <a class="border px-3 py-1 rounded text-sm flex items-center gap-1 hover:bg-gray-100 dark:hover:bg-gray-700"
+                   href="#" target="_blank">
+                    <i class="fa-brands fa-github"></i> Repositório
+                </a>
+
+                <a class="bg-blue-500 text-white px-3 py-1 rounded text-sm flex items-center gap-1 hover:bg-blue-600"
+                   href="#" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                </a>
+            </div>
+        </div>
+
+<!-- Projeto 3 -->
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow flex flex-col h-full">
+            
+            <div class="flex justify-between items-start gap-2 mb-2">
+                <h3 class="font-semibold text-sm">Calculadora Web</h3>
+                <div class="flex gap-1 flex-wrap">
+                    <span class="bg-gray-500 text-white text-xs px-2 py-1 rounded">Frontend</span>
+                </div>
+            </div>
+
+            <p class="text-gray-500 dark:text-gray-400 text-sm mb-2">
+                Calculadora com operações básicas e interface responsiva.
+            </p>
+
+            <ul class="text-sm mb-4 list-disc ml-4">
+                <li>HTML + CSS</li>
+                <li>JavaScript</li>
+                <li>Eventos e DOM</li>
+            </ul>
+
+            <div class="mt-auto flex gap-2">
+                <a class="border px-3 py-1 rounded text-sm flex items-center gap-1 hover:bg-gray-100 dark:hover:bg-gray-700"
+                   href="#" target="_blank">
+                    <i class="fa-brands fa-github"></i> Repositório
+                </a>
+
+                <a class="bg-blue-500 text-white px-3 py-1 rounded text-sm flex items-center gap-1 hover:bg-blue-600"
+                   href="#" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- INTERESSES -->
+<section id="interesses" class="py-6 max-w-6xl mx-auto px-4">
+    <h2 class="text-xl mb-3">Interesses</h2>
+
+    <div class="grid lg:grid-cols-2 gap-4">
+
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">
+            <ul>
+                <li>Análise de dados</li>
+                <li>Banco de Dados e modelagem</li>
+                <li>Métodos de aprendizado de máquina</li>
+                <li>Sistemas de informações gerenciais</li>
+                <li>Sensoriamento remoto</li>
+            </ul>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">
+            <p>Projetos e pesquisa na área florestal.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contato" class="py-6 max-w-6xl mx-auto px-4">
+    <div class="mb-3">
+        <h2 class="text-xl font-semibold mb-1">Contato</h2>
+        <p class="text-gray-500 dark:text-gray-400">Como falar comigo.</p>
+    </div>
+
+    <div class="grid gap-4 lg:grid-cols-2">
+
+        <!-- Coluna 1 -->
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">
+            <ul class="space-y-3">
+
+                <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-blue-500"></i>
+                    <span>kalill.pascoa@ufla.com</span>
+                </li>
+
+                <li class="flex items-center gap-2">
+                    <i class="fa-brands fa-github text-blue-500"></i>
+                    <a href="https://github.com/Kalillpascoa" target="_blank"
+                       class="hover:underline">
+                        github.com/Kalillpascoa
+                    </a>
+                </li>
+
+                <li class="flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin text-blue-500"></i>
+                    <a href="https://www.linkedin.com/in/kalill-p%C3%A1scoa-1682163b/" target="_blank"
+                       class="hover:underline">
+                        linkedin.com/in/Kalill-pascoa
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Coluna 2 -->
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow">
+            <ul class="space-y-3">
+
+                <li class="flex items-center gap-2">
+                    <i class="fa-brands fa-instagram text-blue-500"></i>
+                    <a href="https://www.instagram.com/kalillpascoa/" target="_blank"
+                       class="hover:underline">
+                        instagram.com/kalillpascoa
+                    </a>
+                </li>
+
+                <li class="flex items-center gap-2">
+                    <i class="fa-brands fa-facebook text-blue-500"></i>
+                    <a href="https://www.facebook.com/kalill.pascoa/" target="_blank"
+                       class="hover:underline">
+                        facebook.com/kalill.pascoa
+                    </a>
+                </li>
+
+                <li class="flex items-center gap-2">
+                    <i class="fa-brands fa-youtube text-blue-500"></i>
+                    <a href="https://www.youtube.com/@kalillpascoa" target="_blank"
+                       class="hover:underline">
+                        youtube.com/@kalillpascoa
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t py-4 text-center text-sm">
+    © 2026 - Kalill José Viana da Páscoa
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
